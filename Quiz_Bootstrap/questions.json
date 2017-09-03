@@ -1,0 +1,142 @@
+{
+  "questions": [
+    {
+      "id": 0,
+      "question": "What is the correct lyric of the last line in 'Like Spinning Plates'?",
+      "answer": "answer-4",
+      "choices": [
+        {
+          "id": 1,
+          "text": "And this just feels like spinning plates."
+        },
+        {
+          "id": 2,
+          "text": "I'm living in cloud cuckoo land."
+        },
+        {
+          "id": 3,
+          "text": "And this just feels like spinning plates."
+        },
+        {
+          "id": 4,
+          "text": "My body's floating down the muddy river."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "question": "Thom used the motto of the city of Palo Alto, California, as a lyric in the song 'Palo Alto'. What is that motto?",
+      "answer": "answer-2",
+      "choices": [
+        {
+          "id": 1,
+          "text": "The city of lost children."
+        },
+        {
+          "id": 2,
+          "text": "The City Of The Future."
+        },
+        {
+          "id": 3,
+          "text": "The city of david."
+        },
+        {
+          "id": 4,
+          "text": "The city of bones."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Which Radiohead artist-in-residence did most of the artwork for 'In Rainbows?'",
+      "answer": "answer-2",
+      "choices": [
+        {
+          "id": 1,
+          "text": "DEBORAH OROPALLO"
+        },
+        {
+          "id": 2,
+          "text": "STANLEY DONWOOD "
+        },
+        {
+          "id": 3,
+          "text": "CHRIS SUCCO"
+        },
+        {
+          "id": 4,
+          "text": "SARAH MOON"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "The lyrics to 'I Will' are in direct reference to what major event that took place in the 90's?",
+      "answer": "answer-1",
+      "choices": [
+        {
+          "id": 1,
+          "text": "The Gulf War."
+        },
+        {
+          "id": 2,
+          "text": "Newt Gingrich redefines the American Right."
+        },
+        {
+          "id": 3,
+          "text": "The O.J. Simpson chase, trial and acquittal."
+        },
+        {
+          "id": 4,
+          "text": "Napster and the rise of free digital content."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "These lyrics are from what song? 'Take a look around / There's candles on the cake / On what might have been / The road you should have took / Mistakes mistaken.'",
+      "answer": "answer-3",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Fake Plastic Trees"
+        },
+        {
+          "id": 2,
+          "text": "Karma Police"
+        },
+        {
+          "id": 3,
+          "text": "Worrywort"
+        },
+        {
+          "id": 4,
+          "text": "Idioteque"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Who does Thom Yorke want to emulate in Pablo Honey's 'Anyone Can Play Guitar'?",
+      "answer": "answer-3",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Jimi Hendrix"
+        },
+        {
+          "id": 2,
+          "text": "Kurt Cobain"
+        },
+        {
+          "id": 3,
+          "text": "Jim Morrison"
+        },
+        {
+          "id": 4,
+          "text": "Janis Joplin"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../font/icomoon.eot') format('embedded-opentype'), url('../font/icomoon.svg') format('svg'), url('../font/icomoon.ttf') format('truetype'), url('../font/icomoon.woff') format('woff');
+}
+/*@fontSpoiler_Light: 'spoilerLight', sans-serif, arial;
+@fontSpoiler_Regular: 'spoilerRegular', 'spoilerRegularEn', sans-serif, arial;
+@fontSpoiler_Bold: 'spoilerBold', 'spoilerBoldEn', sans-serif, arial;
+@fontSpoiler_en_Regular: 'spoilerRegularEn', sans-serif, arial;
+@fontSpoiler_en_Bold: 'spoilerBoldEn', sans-serif, arial;*/

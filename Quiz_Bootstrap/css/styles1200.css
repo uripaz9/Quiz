@@ -1,0 +1,67 @@
+@media (min-width: 1200px) {
+  /* start general items*/
+  .keyboard-focus,
+  .keyboard-focus:focus {
+    outline: 2px dotted red !important;
+    outline-offset: -2px;
+  }
+  .has-error .form-control.keyboard-focus:focus,
+  .bootstrap-select.btn-group .btn.keyboard-focus:focus,
+  input.keyboard-focus:focus,
+  input[type].keyboard-focus:focus,
+  textarea.keyboard-focus:focus,
+  .form-control.keyboard-focus:focus,
+  .uneditable-input.keyboard-focus:focus {
+    outline: none !important;
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  .mouse-focus,
+  .mouse-focus:focus {
+    outline: none !important;
+  }
+  .btn.btn-checkbox input.keyboard-focus ~ .checkboxPic,
+  .btn.btn-radio input.keyboard-focus ~ .checkboxPic {
+    outline: 2px dotted red !important;
+  }
+  html:focus,
+  .modal:focus {
+    outline: none !important;
+  }
+  a[href^="tel:"] {
+    text-decoration: none;
+    cursor: default;
+  }
+  a[href^="mailTo:"] {
+    text-decoration: none;
+  }
+  .col-sm-20 {
+    width: 20%;
+    float: right;
+  }
+  /* end general items*/
+  main {
+    padding: 0;
+  }
+  header h1 {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0;
+    margin-top: 100px;
+    padding: 40px 50px;
+    font-size: 40px;
+  }
+  .questionText {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 45px;
+    border-radius: 50px;
+    margin-top: 0;
+  }
+}

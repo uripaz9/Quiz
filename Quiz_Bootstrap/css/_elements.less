@@ -1,0 +1,206 @@
+
+//font family
+@font_regular: 'HadassaLineProV2-Regular', arial;
+@font_Rubik: 'Rubik', sans-serif;
+@font_Josefin: 'Josefin Sans', sans-serif;
+
+//colors
+@colorGray1: blue;
+
+//media-size
+@screen-sm: 768px;
+@screen-md: 992px;
+@screen-lg: 1200px;
+@screen-xl: 1600px;
+
+@gutter: 12px;
+
+.placeholder(@color) {
+    &::-webkit-input-placeholder {
+        color: @color;
+        opacity: 1;
+    }
+
+    &::-moz-placeholder {
+        color: @color;
+        opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+        color: @color;
+        opacity: 1;
+    }
+}
+
+.btnTheme (@color) {
+    background-color: @color;
+
+    &:active,
+    &.active,
+    &:focus,
+    &:hover {
+        color: #fff;
+        background-color: softlight(@color, #666666);
+    }
+}
+
+.transitionMove() {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.clearfix() {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+.collapseFade() {
+    height: auto !important;
+    opacity: 0;
+    max-height: none;
+
+    &.collapsing {
+        -moz-transition: opacity 0.3s linear;
+        -o-transition: opacity 0.3s linear;
+        -webkit-transition: opacity 0.3s linear;
+        transition: opacity 0.3s linear;
+    }
+
+    &.collapse.in {
+        opacity: 1.0;
+        -moz-transition: opacity 0.3s linear;
+        -o-transition: opacity 0.3s linear;
+        -webkit-transition: opacity 0.3s linear;
+        transition: opacity 0.3s linear;
+    }
+
+    &.collapse {
+        -moz-transition: opacity 0.3s linear;
+        -o-transition: opacity 0.3s linear;
+        -webkit-transition: opacity 0.3s linear;
+        transition: opacity 0.3s linear;
+    }
+}
+
+.displayTable(@verticalAlign) {
+    display: table;
+
+    &:before,
+    &:after {
+        display: none;
+    }
+
+    > * {
+        float: none;
+        display: table-cell;
+        vertical-align: @verticalAlign;
+    }
+}
+
+.keyframes(@name) {
+    @-webkit-keyframes
+    @name
+
+{
+    .-frames(-webkit-);
+}
+
+@-moz-keyframes
+@name
+
+{
+    .-frames(-moz-);
+}
+
+@keyframes
+@name
+
+{
+    .-frames();
+}
+
+}
+
+.arrowLeftRight() {
+    -moz-animation: arrowMove ease 0.3s alternate forwards;
+    -o-animation: arrowMove ease 0.3s alternate forwards;
+    -webkit-animation: arrowMove ease 0.3s alternate forwards;
+    animation: arrowMove ease 0.3s alternate forwards;
+    .keyframes(arrowMove);
+
+    .-frames(@-...) {
+        0% {
+            -moz-transform: translate(0, -50%) rotate(-45deg);
+            -ms-transform: translate(0, -50%) rotate(-45deg);
+            -o-transform: translate(0, -50%) rotate(-45deg);
+            -webkit-transform: translate(0, -50%) rotate(-45deg);
+            transform: translate(0, -50%) rotate(-45deg);
+        }
+
+        100% {
+            -moz-transform: translate(-3px, -50%) rotate(-45deg);
+            -ms-transform: translate(-3px, -50%) rotate(-45deg);
+            -o-transform: translate(-3px, -50%) rotate(-45deg);
+            -webkit-transform: translate(-3px, -50%) rotate(-45deg);
+            transform: translate(-3px, -50%) rotate(-45deg);
+        }
+    }
+}
+
+.paddingBottom (@width, @height) {
+    padding-bottom: (1 / (@width / @height)) * 100%;
+}
+
+.gradientBG (@color, @colorFrom, @colorTo, @colorBgFav) {
+    &.color .colorLink:hover,
+    &.socialContact a figure,
+    &.colorBG,
+    &.topSection .btnFavourite.active figure,
+    &.topSection .btnFavourite:hover figure,
+    &.card .btnFavourite.active figure,
+    &.card .btnFavourite:hover figure,
+    &.commonIssuesSection .subjectSection .link-tab a:hover {
+        background-color: @colorBgFav;
+    }
+
+    &.color .colorLink,
+    &.commonIssuesSection .titleBlue,
+    &.commonIssuesSection .subjectSection .link-tab a,
+    &.card .title,
+    &.card .title a {
+        color: @color;
+    }
+
+    &.color .colorLink,
+    &.commonIssuesSection .subjectSection .link-tab a {
+        border-color: @color;
+    }
+
+    &.socialContact a:hover figure {
+        background: softlight(@color, #444);
+    }
+
+    &.issueSection .linkToTopSection li + li,
+    &.issueSection .linkToTopSection li:nth-child(even) {
+        border-color: softlight(@color, #444);
+    }
+
+    &.posts-block .card .topContent,
+    &.gradientColor,
+    &.blockSection .topContent,
+    &.card .topContent {
+        background: @colorFrom;
+        background-image: -moz-linear-gradient(155deg, @colorFrom, @colorTo);
+        background-image: -webkit-linear-gradient(155deg, @colorFrom, @colorTo);
+        background-image: linear-gradient(155deg, @colorFrom, @colorTo);
+    }
+}

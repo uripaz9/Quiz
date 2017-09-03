@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>title</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/styles1200.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;subset=hebrew" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+
+</head>
+<body ontouchstart="">
+<main>
+    <header>
+        <h1 class="title">radiohead quiz</h1>
+    </header>
+    <div class="wrapper">
+
+        <form class="questionForm" id="questionForm">
+
+            <h2 class="questionText" id="questionTextId"></h2>
+
+            <input type="radio" name="answer" id="answer-1" value="">
+            <label class="answerText" for="answer-1"></label>
+
+            <br>
+
+            <input type="radio" name="answer" id="answer-2" value="">
+            <label class="answerText" for="answer-2"></label>
+
+            <br>
+
+            <input type="radio" name="answer" id="answer-3" value="">
+            <label class="answerText" for="answer-3"></label>
+
+            <br>
+
+            <input type="radio" name="answer" id="answer-4" value="">
+            <label class="answerText" for="answer-4"></label>
+
+
+        </form>
+
+        <input class="nextBtn" id='nextBtn' name="nextQuestion" type="button" value="Next"
+               onclick="quiz.nextQuestionClick()"/>
+
+            <input class="submitAnswer" id='submitBtn' name="submitAnswer" type="button" value="Submit"
+                   onclick="quiz.submitAnswer()"/>
+
+
+        <div id="results">
+            <p class="sumText">You answered <span id="count"></span> questions correctly</p>
+
+            <ul class="sumList" id="sum"></ul>
+
+            <input class="backBtn" id='backBtn' name="backBtn" type="button" value="Back" onclick="quiz.backBtn()"/>
+        </div>
+
+    </div>
+    <footer></footer>
+
+</main>
+
+</body>
+</html>
